@@ -3,6 +3,7 @@
     <string name="app_label">Data-Binding examples</string>
 
     <string name="intro">Select from the dropdown list to choose an example</string>
+    <string name="not_yet">Example not yet implemented</string>
 
     <string-array name="examples">
         <item>MainActivity|DataBinding Examples|https://s3.amazonaws.com/android-databinding-examples/home.html</item>

@@ -8,6 +8,7 @@ import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -68,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(this, clazz);
                 startActivity(intent);
             } catch (ClassNotFoundException e) {
-                e.printStackTrace();
+                String notYet = getResources().getString(R.string.not_yet);
+                Toast.makeText(this, notYet, Toast.LENGTH_SHORT).show();
             }
         }
     }
