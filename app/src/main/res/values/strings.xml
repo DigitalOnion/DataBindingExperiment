@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">DataBindingAgain</string>
+    <string name="app_label">Data-Binding examples</string>
+
+    <string name="intro">Select from the dropdown list to choose an example</string>
 </resources>
