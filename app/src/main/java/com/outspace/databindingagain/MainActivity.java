@@ -1,5 +1,6 @@
 package com.outspace.databindingagain;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private Example[] examples = null;
+    private String selectedClassName = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,10 +52,25 @@ public class MainActivity extends AppCompatActivity {
                 String url = MainActivity.this.examples[position].url;
                 WebView web = (WebView) findViewById(R.id.web);
                 web.loadUrl(url);
+                MainActivity.this.selectedClassName = null;
+                if(position != 0)
+                    MainActivity.this.selectedClassName = MainActivity.this.examples[position].classname;
             }
 
             @Override public void onNothingSelected(AdapterView<?> parent) { }
         });
+    }
+
+    public void OnClickBtnGo(View view) {
+        if(selectedClassName != null) {
+            try {
+                Class clazz = Class.forName(selectedClassName);
+                Intent intent = new Intent(this, clazz);
+                startActivity(intent);
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private class Example {
