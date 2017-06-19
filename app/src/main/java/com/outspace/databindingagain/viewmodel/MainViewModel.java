@@ -6,7 +6,7 @@ package com.outspace.databindingagain.viewmodel;
 
 public class MainViewModel {
 
-    
+
 
 
 }
