@@ -1,4 +1,4 @@
-package com.outspace.databindingagain;
+package com.outspace.databindingagain.view;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.outspace.databindingagain.R;
 
 import java.util.ArrayList;
 
