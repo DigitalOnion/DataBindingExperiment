@@ -43,7 +43,7 @@
             <Button
                 android:id="@+id/btn_go"
                 android:text=">"
-                android:onClick="OnClickBtnGo"
+                android:onClick="@{mainVM::OnClickBtnGo}"
                 android:layout_gravity="center"
                 android:layout_weight="10"
                 android:layout_width="0dp"
