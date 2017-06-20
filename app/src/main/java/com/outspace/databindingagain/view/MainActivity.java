@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-        MainViewModel mainVM = new MainViewModel(this);
+        MainViewModel mainVM = new MainViewModel(this, binding);
         binding.setMainVM(mainVM);
     }
 
