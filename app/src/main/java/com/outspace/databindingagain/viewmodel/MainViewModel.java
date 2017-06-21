@@ -23,6 +23,7 @@ import java.util.ArrayList;
 public class MainViewModel {
     private AppCompatActivity activity;
     private ActivityMainBinding binding;
+    Spinner spinner;
     private WebView web;
     private String selectedClassName;
     private Example[] examples = null;
@@ -30,8 +31,9 @@ public class MainViewModel {
     public MainViewModel(AppCompatActivity activity, ActivityMainBinding binding) {
         this.activity = activity;
         this.binding  = binding;
+        this.spinner  = binding.spinner;
+        this.web      = binding.web;
 
-        Spinner spinner = binding.spinner;
         InitSpinner(spinner);
         InitSpinnerListener(spinner);
     }
@@ -52,7 +54,8 @@ public class MainViewModel {
             }
         }
     }
-    private void InitSpinner(Spinner spinner) {
+
+    public void InitSpinner(Spinner spinner) {
 
         ArrayList<String> array = new ArrayList<>();
 
@@ -68,7 +71,7 @@ public class MainViewModel {
             array.add(example.message);
         }
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(activity.getApplicationContext(),
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(activity,
                 R.layout.support_simple_spinner_dropdown_item, array);
         adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
