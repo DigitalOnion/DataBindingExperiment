@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.outspace.databindingagain.R;
 import com.outspace.databindingagain.databinding.ActivityMainBinding;
+import com.outspace.databindingagain.model.Example;
 import com.outspace.databindingagain.view.MainActivity;
 
 import java.util.ArrayList;
@@ -91,11 +92,5 @@ public class MainViewModel {
             @Override public void onNothingSelected(AdapterView<?> parent) { }
         });
 
-    }
-
-    private class Example {
-        public String classname;
-        public String message;
-        public String url;
     }
 }
