@@ -46,7 +46,8 @@ public class MainViewModel {
     public void OnClickBtnGo(View view) {
         if(selectedClassName != null) {
             try {
-                Class clazz = Class.forName(selectedClassName);
+                String viewPackage = Globals.getInstance().getViewPackage() + ".";
+                Class clazz = Class.forName(viewPackage + selectedClassName);
                 Intent intent = new Intent(activity, clazz);
                 activity.startActivity(intent);
             } catch (ClassNotFoundException e) {
