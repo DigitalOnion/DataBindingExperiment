@@ -5,6 +5,12 @@
     <string name="intro">Select from the dropdown list to choose an example</string>
     <string name="not_yet">Example not yet implemented</string>
 
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_birthday">Birthday</string>
+    <string name="hint_cool_phrase">Cool Phrase</string>
+    <string name="btn_save">Save</string>
+
     <string-array name="examples">
         <item>MainActivity|DataBinding Examples|https://s3.amazonaws.com/android-databinding-examples/home.html</item>
         <item>SimpleBinding|Simple binding|https://s3.amazonaws.com/android-databinding-examples/simple_binding.html</item>
