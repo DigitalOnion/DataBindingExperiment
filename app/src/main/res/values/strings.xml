@@ -14,8 +14,8 @@
     <string-array name="examples">
         <item>MainActivity|DataBinding Examples|https://s3.amazonaws.com/android-databinding-examples/home.html</item>
         <item>SimpleBinding|Simple binding|https://s3.amazonaws.com/android-databinding-examples/simple_binding.html</item>
-        <item>ViewModelBinding|View Model|https://s3.amazonaws.com/android-databinding-examples/view_model_binding.html</item>
         <item>TwoWayBinding|Two way binding|https://s3.amazonaws.com/android-databinding-examples/two_way_binding.html</item>
+        <item>ViewModelBinding|View Model|https://s3.amazonaws.com/android-databinding-examples/view_model_binding.html</item>
         <item>RecyclerViewBinding|RecyclerView binding|https://s3.amazonaws.com/android-databinding-examples/recyclerview_binding.html</item>
     </string-array>
 
