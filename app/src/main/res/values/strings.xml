@@ -10,6 +10,7 @@
     <string name="hint_birthday">Birthday</string>
     <string name="hint_cool_phrase">Cool Phrase</string>
     <string name="btn_save">Save</string>
+    <string name="btn_clear">Clear</string>
 
     <string-array name="examples">
         <item>MainActivity|DataBinding Examples|https://s3.amazonaws.com/android-databinding-examples/home.html</item>
