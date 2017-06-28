@@ -3,7 +3,7 @@
     <data>
         <variable
             name="person"
-            type="com.outspace.databindingagain.model.Person" />
+            type="com.outspace.databindingagain.model.PersonObservable" />
     </data>
 
     <ScrollView
@@ -15,7 +15,7 @@
             android:layout_height="match_parent"
             android:padding="8dp"
             android:orientation="vertical"
-            tools:context="com.outspace.databindingagain.view.SimpleBinding">
+            tools:context="com.outspace.databindingagain.view.TwoWayBinding">
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -26,7 +26,8 @@
                     android:id="@+id/first_name"
                     android:text="@{person.firstName}"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:addTextChangedListener = "@{person.firstNameWatcher}"/>
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
