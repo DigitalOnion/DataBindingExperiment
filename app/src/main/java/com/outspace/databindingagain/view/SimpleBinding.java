@@ -16,10 +16,10 @@ public class SimpleBinding extends AppCompatActivity {
         //setContentView(R.layout.activity_simple_binding);
 
         Person person = new Person();
-        person.firstName  = "Luis Jesús";
-        person.lastName   = "Virueña Silva";
-        person.birthDay   = "08/16/2017";
-        person.coolPhrase = "Follow the white rabbit";
+        person.setFirstName("Luis Jesús");
+        person.setLastName("Virueña Silva");
+        person.setBirthDay("08/16/2017");
+        person.setCoolPhrase("Follow the white rabbit");
 
         ActivitySimpleBindingBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_simple_binding);
         binding.setPerson(person);
