@@ -18,8 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.SimpleBinding"></activity>
-        <activity android:name=".view.TwoWayBinding"></activity>
+        <activity android:name=".view.SimpleBinding" />
+        <activity android:name=".view.TwoWayBinding" />
+        <activity android:name=".view.ViewModelBinding"/>
     </application>
 
 </manifest>

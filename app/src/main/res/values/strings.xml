@@ -12,6 +12,8 @@
     <string name="btn_save">Save</string>
     <string name="btn_clear">Clear</string>
 
+    <string name="intro_vm_binding">View Model is an architectural design pattern that separates the view (layout and Activity) from business rules (ViewModel and Model) architectural layers</string>
+
     <string-array name="examples">
         <item>MainActivity|DataBinding Examples|https://s3.amazonaws.com/android-databinding-examples/home.html</item>
         <item>SimpleBinding|Simple binding|https://s3.amazonaws.com/android-databinding-examples/simple_binding.html</item>
