@@ -5,8 +5,8 @@
             name="person"
             type="com.outspace.databindingagain.model.PersonObservable" />
         <variable
-            name="vmBinding"
-            type="com.outspace.databindingagain.viewmodel.ViewModelForVMBinding"/>
+            name="viewmodel"
+            type="com.outspace.databindingagain.viewmodel.ViewModelForVMBExample"/>
     </data>
 
     <ScrollView
@@ -92,6 +92,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="30"
+                    android:enabled="@{person.firstName.length() > 0}"
                     android:text="@string/btn_save"/>
                 <View
                     android:layout_width="0dp"
